@@ -6,7 +6,6 @@ Use this starter code and fill in all the TODOs.
 
 ## Required packages
 
-This code requires `python3.8+` to execute due to type annotations.
 Use the following command to install the required packages.
 
 ```bash
@@ -18,11 +17,11 @@ python -m pip install -r requirements.txt
 Review the programs usage here:
 
 ```
-python minesweeper.py -h
+python game.py -h                         
 pygame 2.2.0 (SDL 2.0.22, Python 3.7.6)
 Hello from the pygame community. https://www.pygame.org/contribute.html
 usage: Minesweeper Solver [-h] [--rows ROWS] [--columns COLUMNS]
-                          [--mines MINES] [--no-render]
+                          [--mines MINES] [--seed SEED] [--no-render]
                           [--block-size BLOCK_SIZE] [--verbose]
 
 You will be using Linear Programming iteratively to progressively solve a
@@ -35,13 +34,14 @@ optional arguments:
                         Board columns
   --mines MINES, -m MINES
                         Number of mines on the board
+  --seed SEED, -s SEED  Provide a seed to recreate the same boards.
   --no-render           Disable rendering for testing purposes
   --block-size BLOCK_SIZE, -b BLOCK_SIZE
                         Size of each block in pixels
   --verbose, -v         Increase verbosity
 
 University of Chicago, CMSC 27200 Spring '23 Konstantinos Ameranis, Lorenzo
-Orecchia
+Orecchia, Ivan Galakhov
 ```
 
-When you are done with coding your solution, you can use your solver in the following way `python minesweeper.py -b 40 -v -r 24 -c 30 -m 150`
+When you are done with coding your solution, you can use your solver in the following way `python game.py -b 40 -v -r 24 -c 30 -m 150`
