@@ -65,7 +65,7 @@ class MinesweeperLPSolver():
 
         # TODO: Retrieve the solution and find which blocks are close enough to one
         # and which close enough to zero; or the unclicked one with lowest value.
-        return [], []
+        return [(np.random.randint(self.board.windowWidth), np.random.randint(self.board.windowHeight))], [(np.random.randint(self.board.windowWidth), np.random.randint(self.board.windowHeight))]
 
     def add_constraint(self, i: int, j: int, mine_count: int) -> None:
         """Add a constraint based on the value of block (i, j)
