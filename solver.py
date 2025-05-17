@@ -65,7 +65,7 @@ class MinesweeperLPSolver():
         # TODO: Create and solve the problem
         H, W = self.board.windowHeight, self.board.windowWidth
         self.prob = cp.Problem(self.objective, self.constraints)
-        self.prob.solve(solver=cp.ECOS, verbose=(self.verbose > 1))
+        self.prob.solve()
         sol = self.x.value
         self.last_solution = sol
         zero_pos, one_pos = [], []
